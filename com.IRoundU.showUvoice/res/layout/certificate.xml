@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+	<RelativeLayout android:id="@+id/certificate_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+        
+        <TextView android:id="@+id/certificate_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/back"
+	        android:focusable="false"
+	        android:textSize="18dp"
+	        android:textColor="#000000"
+	        android:text="@string/_back" />
+    	
+	    <TextView android:id="@+id/certificate_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_home_edit_certificate" />
+	    
+    </RelativeLayout>
+    
+	<RelativeLayout android:id="@+id/certificate_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/certificate_title"
+	    android:layout_margin="5dip" >
+	
+		<TextView android:id="@+id/certificate_content_info1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="#000000"
+		    android:textSize="15dip"
+		    android:text="做一个有身份的人，提高影响力，赶紧过来认证吧！" />
+	
+		<TextView android:id="@+id/certificate_content_info2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/certificate_content_info1"
+		    android:layout_marginTop="5dip"
+		    android:textColor="#000000"
+		    android:textSize="15dip"
+		    android:text="请将认证需求发送到：renzheng@iroundu.com" />
+	
+		<TextView android:id="@+id/certificate_content_info3"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/certificate_content_info2"
+		    android:layout_marginTop="5dip"
+		    android:textColor="#000000"
+		    android:textSize="15dip"
+		    android:text="在2-3个工作日内会与您取得联系，并告知您需要提交的认证资料。" />
+	
+		<TextView android:id="@+id/certificate_content_info4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/certificate_content_info3"
+		    android:layout_marginTop="5dip"
+		    android:textColor="#000000"
+		    android:textSize="15dip"
+		    android:text="认证之后，会在您的用户民后加上V字标识！" />
+	    
+	</RelativeLayout>
+    
+</RelativeLayout>

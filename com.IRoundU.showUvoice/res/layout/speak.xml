@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:paddingBottom="5dip" >
+
+    <ImageView android:id="@+id/speak_title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/align_top"
+        android:padding="@dimen/padding_medium"
+    	android:src="@drawable/iroundu"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginTop="@dimen/align_top"
+        android:background="@drawable/back"
+        android:text="@string/_back"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/etcolor" >
+    </Button>
+    
+    <Button
+        android:id="@+id/splite_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/splite_line"
+        android:layout_below="@+id/back_button"
+        android:layout_marginBottom="@dimen/logo_padding_bottom"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/line" >
+    </Button>
+
+    <ImageView android:id="@+id/item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/logo_size"
+        android:layout_below="@id/splite_line"
+        android:layout_marginBottom="@dimen/logo_padding_bottom"
+    	android:src="@drawable/iroundu"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+    
+    <EditText
+        android:id="@+id/id_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_image"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginBottom="@dimen/padding_zero"
+        android:paddingLeft="@dimen/padding_sep"
+        android:background="@drawable/username"
+        android:hint="@string/_id"
+        android:textColorHint="@color/etcolor"
+        android:textSize="@dimen/text_size_etmedium"
+        android:textColor="@color/etcolor" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/pwd_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginBottom="@dimen/padding_zero"
+        android:paddingLeft="@dimen/padding_sep"
+        android:background="@drawable/pwd"
+        android:hint="@string/_pwd"
+        android:textColorHint="@color/etcolor"
+        android:password="true"
+        android:textSize="@dimen/text_size_etmedium"
+        android:textColor="@color/etcolor" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/show_hide_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/_showpwd"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/etcolor" >
+    </Button>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_top"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:background="@drawable/button_color"
+        android:text="@string/_login"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/btcolor" >
+    </Button>
+    
+    <Button
+        android:id="@+id/forget_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="@dimen/padding_top"
+        android:layout_marginBottom="@dimen/padding_right"
+        android:layout_marginRight="@dimen/padding_right"
+        android:background="@color/bgcolor"
+        android:text="@string/_forget"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/forgetpwdcolor" >
+    </Button>
+
+</RelativeLayout>

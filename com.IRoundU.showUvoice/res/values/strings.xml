@@ -1,0 +1,165 @@
+<resources>
+
+    <string name="app_name">com.IRoundU.showUvoice</string>
+    <string name="icon_name">IRoundU</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_iround_u">IRoundUActivity</string>
+    
+    <string name="splash">I Round U</string>
+    
+    <string name="breadRoutine">Breakroutine</string>
+    <string name="V">V</string>
+    
+    <string name="_login_title">登录</string>
+    <string name="_back">返回</string>
+    <string name="id">帐户</string>
+    <string name="pwd">密码</string>
+    <string name="_id">  用户名/邮箱</string>
+    <string name="_pwd">  密码</string>
+    <string name="_email">  邮箱</string>
+    <string name="_repwd">请确认密码</string>
+    <string name="_login">登录</string>
+    <string name="_scan">逛逛</string>
+    <string name="_register">注册</string>
+    <string name="_forget">忘记密码？</string>
+    <string name="_showpwd">显示</string>
+    <string name="_hidepwd">隐藏</string>
+    <string name="_remberpwd">记住密码</string>
+    <string name="_forgetpwd">忘记密码</string>
+    <string name="_register_id">  用户名</string>
+    
+    <string name="_register_title">注册</string>
+    <string name="_notice">注意：性别选择后，不可更改</string>
+    <string name="repwd">确认密码</string>
+    <string name="first_step">第一步</string>
+    <string name="second_step">第二步</string>
+    <string name="third_step">第三步</string>
+    <string name="next_step">下一步</string>
+    <string name="name">姓名</string>
+    <string name="sex_m">男</string>
+    <string name="sex_w">女</string>
+    <string name="_name">请输入姓名</string>
+    <string name="_pick_up">相册选取</string>
+    <string name="_take_off">现在拍照</string>
+    <string name="finish">完成</string>
+    
+    <string name="_forget_pwd_title">找回密码</string>
+    <string name="_forget_pwd_notice">请输入注册时使用的邮箱地址\r\n我们将会把密码发到此邮箱中</string>
+    <string name="_forget_pwd_email">邮箱</string>
+    <string name="_forget_pwd_ok">确定</string>
+    <string name="_find_back_success">尊敬的用户：\r\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们已经将密码发送到您的邮箱中，请查收！\r\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;iroundu团队</string>
+    <string name="_back_login">返回登录页面</string>
+    <string name="_find_back_failed">尊敬的用户：\r\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;很抱歉的通知您，您所填写的邮箱未被注册，请您重新填写正确的邮箱以找回密码或重新注册新帐号(10s钟即可以搞定完成注册哦！)\r\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;iroundu团队</string>
+    <string name="_re_email">重填找回密码邮箱</string>
+    <string name="_new_register">注册新帐号</string>
+    
+    <string name="error_dialog_title">错误</string>
+    <string name="error_dialog_content_null">请输入帐户和密码</string>
+    <string name="error_dialog_content_net">连接失败，请检查网络连接</string>
+    <string name="error_dialog_content_wrong">密码错误，请重新输入密码</string>
+    <string name="error_dialog_content_notthesame">两次密码不一致，请重新输入密码</string>
+    <string name="error_dialog_makesur">确定</string>
+    
+    <string name="exit_dialog_title">退出</string>
+    <string name="exit_dialog_content">确定退出程序？"</string>
+    <string name="exit_dialog_makesur">确定</string>
+    
+    <string name="_nearby_title">动态</string>
+    <string name="_near_near">附近</string>
+    <string name="_near_attention">关注</string>
+    <string name="_near_play">连续播放</string>
+    <string name="_near_find">查找</string>
+    <string name="_near_hint">搜索用户或标签</string>
+    <string name="_near_sure">确定</string>
+    <string name="_near_sina">邀请新浪微博好友</string>
+    <string name="_near_qq">邀请腾讯微博好友</string>
+    <string name="_near_hot">热门推荐</string>
+    <string name="_near_focus">关注</string>
+    <string name="_near_icon">头像</string>
+    <string name="_near_like">喜欢</string>
+    <string name="_near_comment">评论</string>
+    <string name="_near_share">分享</string>
+    
+    <string name="_search_title">探索</string>
+    <string name="_search_play">连续播放</string>
+    
+    <string name="_speak_title">说说</string>
+    <string name="_speak_voices">按住录音</string>
+    
+    <string name="_home_title">主页</string>
+    <string name="_home_edit">编辑</string>
+    <string name="_home_edit_save">保存</string>
+    <string name="_home_edit_cancel">取消</string>
+    <string name="_home_edit_photo">点击图片，进行更换</string>
+    <string name="_home_edit_name">名字</string>
+    <string name="_home_edit_job">职业</string>
+    <string name="_home_edit_company">公司</string>
+    <string name="_home_edit_school">学校</string>
+    <string name="_home_edit_describe">一句话介绍</string>
+    <string name="_home_edit_SNS">绑定社交网络</string>
+    <string name="_home_edit_SNS_sina">新浪微博</string>
+    <string name="_home_edit_SNS_tencent">腾讯微博</string>
+    <string name="_home_edit_SNS_renren">人人网</string>
+    <string name="_home_edit_SNS_weixin">微信朋友</string>
+    <string name="_home_edit_SNS_douban">豆瓣</string>
+    <string name="_home_edit_certificate">我要认证</string>
+    
+    <string name="_info_sure">确定</string>
+    <string name="_info_cancel">取消</string>
+    
+    <string name="_setting_title">设置</string>
+    <string name="_setting_account">帐号设置</string>
+    <string name="_setting_account_pwd">修改密码</string>
+    <string name="_setting_find">找朋友</string>
+    <string name="_setting_find_like">查找你可能喜欢的人</string>
+    <string name="_setting_hide">隐身设置</string>
+    <string name="_setting_hide_visible">对所有人可见</string>
+    <string name="_setting_sync">同步设置</string>
+    <string name="_setting_sync_sina">同步新浪微博</string>
+    <string name="_setting_sync_tencent">同步腾讯微博</string>    
+    <string name="_setting_sync_renren">同步人人网</string>
+    <string name="_setting_sync_weixin">同步微信好友</string>
+    <string name="_setting_chat">私聊设置</string>
+    <string name="_setting_chat_info">(谁可以给我发私信)</string>
+    <string name="_setting_chat_everyone">所有人</string>
+    <string name="_setting_chat_attention">我关注的人</string>
+    <string name="_setting_other">其他</string>
+    <string name="_setting_other_push">手机推送通知</string>
+    <string name="_setting_other_phone">开启听筒模式</string>
+    <string name="_setting_other_about">关于我们</string>
+    <string name="_setting_other_vote">投票支持我们</string>
+    <string name="_setting_other_advise">意见反馈</string>
+    <string name="_setting_exit">退出当前账号</string>
+    <string name="_setting_pwd_old">输入旧密码</string>
+    <string name="_setting_pwd_new">输入新密码</string>
+    <string name="_setting_pwd_new2">再次输入新密码</string>
+    <string name="_setting_pwd_sure">确定</string>
+    <string name="_setting_pwd_lost">忘记密码&#8230;</string>
+    <string name="_setting_pwd_find">找回密码</string>
+    <string name="_setting_pwd_text">请输入注册时使用的邮箱地址，我们将会把密码发到此邮箱中</string>
+    <string name="_setting_pwd_email">邮箱</string>
+    <string name="_setting_about_text">我们的团队&#8230;</string>
+    <string name="_setting_advise_hint">请在此填写意见</string>
+    <string name="_setting_advise_commit">提交反馈</string>
+    <string name="_setting_hide_everyone">对所有人可见</string>
+    <string name="_setting_hide_attention">对我关注的人可见</string>
+    <string name="_setting_hide_hide">对所有人隐身</string>
+    <string name="_setting_hide_sure">确定</string>
+    
+    <string name="_background_title">#550000</string>
+    <string name="_background_menu">#220000</string>
+
+    <string name="default_name">未命名</string>
+    <string name="default_user_time">0分钟前</string>
+    <string name="default_local">0.00</string>
+    <string name="default_sound_playtimes">0</string>
+    <string name="default_sound_time">0</string>
+    <string name="default_like">0</string>
+    <string name="default_comment">0</string>
+    <string name="default_duration">00:00&#8211;00:00</string>
+    <string name="default_attention">0</string>
+    <string name="default_fan">0</string>
+    <string name="default_count">0</string>
+    
+</resources>

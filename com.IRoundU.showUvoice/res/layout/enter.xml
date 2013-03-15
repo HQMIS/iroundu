@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:paddingBottom="5dip" >
+
+    <ImageView android:id="@+id/enter_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+    	android:src="@drawable/image"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+    
+    <ImageView android:id="@+id/enter_iroundu"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_image"
+        android:layout_marginTop="20dp"
+    	android:src="@drawable/text"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+    
+    <ImageView android:id="@+id/enter_vline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+    	android:src="@drawable/vline"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+    
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/double_padding_left"
+        android:layout_marginBottom ="@dimen/double_padding_bottom"
+        android:background="@color/bgcolor"
+        android:text="@string/_register"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/etcolor" >
+    </Button>
+    
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/double_padding_right"
+        android:layout_marginBottom ="@dimen/double_padding_bottom"
+        android:background="@color/bgcolor"
+        android:text="@string/_login"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/etcolor" >
+    </Button>
+    
+</RelativeLayout>

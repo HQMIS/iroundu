@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:paddingBottom="5dip" >
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="@dimen/padding_medium"
+        android:shadowColor="#000000"
+        android:text="@string/_forget_pwd_title"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/titlecolor"
+        tools:context=".IRoundUActivity" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginTop="@dimen/align_top"
+        android:background="@drawable/back"
+        android:text="@string/_back"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/etcolor" >
+    </Button>
+    
+    <Button
+        android:id="@+id/splite_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/splite_line"
+        android:layout_below="@+id/title_textview"
+        android:layout_marginBottom="@dimen/logo_padding_bottom"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/line" >
+    </Button>
+
+    <ImageView android:id="@+id/item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/logo_size"
+        android:layout_below="@id/splite_line"
+        android:layout_marginBottom="@dimen/logo_padding_bottom"
+    	android:src="@drawable/iroundu"
+    	android:contentDescription="@string/app_name" >
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/notice_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_image"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginBottom="@dimen/padding_bottom"
+        android:paddingLeft="@dimen/padding_sep"
+        android:background="@color/bgcolor"
+        android:text="@string/_forget_pwd_notice"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/etcolor"
+        android:gravity="center_horizontal" >
+    </TextView>
+    
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginBottom="@dimen/padding_bottom"
+        android:paddingLeft="@dimen/padding_sep"
+        android:background="@drawable/email"
+        android:hint="@string/_forget_pwd_email"
+        android:textColorHint="@color/etcolor"
+        android:textSize="@dimen/text_size_etmedium"
+        android:textColor="@color/etcolor" >
+    </EditText>
+
+    <Button
+        android:id="@+id/ensure_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:background="@drawable/button_color"
+        android:text="@string/_forget_pwd_ok"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/btcolor" >
+    </Button>
+
+</RelativeLayout>

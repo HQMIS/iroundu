@@ -1,0 +1,596 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout android:id="@+id/setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+	    <TextView android:id="@+id/setting_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_setting_title" />
+        
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/setting_content_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:layout_margin="15dip" >
+        
+	    <RelativeLayout android:id="@+id/setting_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <RelativeLayout android:id="@+id/setting_content_account"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_account_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_account" />
+	            
+	            <View android:id="@+id/setting_content_account_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_account_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_account_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_account_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <TextView android:id="@+id/setting_content_account_info_arrow"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="5dip"
+	                    android:layout_centerVertical="true"
+	                    android:background="@drawable/edit_arrow"/>
+	                
+	                <TextView android:id="@+id/setting_content_account_info_text"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_toLeftOf="@id/setting_content_account_info_arrow"
+	                    android:layout_marginRight="5dip"
+	                    android:textColor="#000000"
+	                    android:textSize="18dp"
+	                    android:text="@string/_setting_account_pwd" />
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/setting_content_find"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_account"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_find_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_find" />
+	            
+	            <View android:id="@+id/setting_content_find_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_find_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_find_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_find_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <TextView android:id="@+id/setting_content_find_info_arrow"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="5dip"
+	                    android:layout_centerVertical="true"
+	                    android:background="@drawable/edit_arrow"/>
+	                
+	                <TextView android:id="@+id/setting_content_find_info_text"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_toLeftOf="@id/setting_content_find_info_arrow"
+	                    android:layout_marginRight="5dip"
+	                    android:textColor="#000000"
+	                    android:textSize="18dp"
+	                    android:text="@string/_setting_find_like" />
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/setting_content_hide"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_find"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_hide_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_hide" />
+	            
+	            <View android:id="@+id/setting_content_hide_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_hide_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_hide_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_hide_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <TextView android:id="@+id/setting_content_hide_info_arrow"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="5dip"
+	                    android:layout_centerVertical="true"
+	                    android:background="@drawable/edit_arrow"/>
+	                
+	                <TextView android:id="@+id/setting_content_hide_info_text"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_toLeftOf="@id/setting_content_hide_info_arrow"
+	                    android:layout_marginRight="5dip"
+	                    android:textColor="#000000"
+	                    android:textSize="18dp"
+	                    android:text="@string/_setting_hide_visible" />
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/setting_content_sync"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_hide"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_sync_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_sync" />
+	            
+	            <View android:id="@+id/setting_content_sync_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_sync_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_sync_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_sync_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <RelativeLayout android:id="@+id/setting_content_sync_info_sina"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_sync_info_sina_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+					        android:focusable="false"
+					        android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_sync_info_sina_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_sync_info_sina_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_sync_sina" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_sync_info_tencent"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_sync_info_sina"
+		                android:layout_marginTop="5dip" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_sync_info_tencent_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+					        android:focusable="false"
+					        android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_sync_info_tencent_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_sync_info_tencent_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_sync_tencent" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_sync_info_renren"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_sync_info_tencent"
+		                android:layout_marginTop="5dip" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_sync_info_renren_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+					        android:focusable="false"
+					        android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_sync_info_renren_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_sync_info_renren_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_sync_renren" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_sync_info_weixin"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_sync_info_renren"
+		                android:layout_marginTop="5dip" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_sync_info_weixin_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+					        android:focusable="false"
+					        android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_sync_info_weixin_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_sync_info_weixin_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_sync_weixin" />
+		                
+		            </RelativeLayout>
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/setting_content_chat"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_sync"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_chat_title"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_chat" />
+	            
+	            <TextView android:id="@+id/setting_content_chat_hint"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/setting_content_chat_title"
+	                android:layout_marginLeft="5dip"
+	                android:textColor="#888888"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_chat_info" />	            
+	            
+	            <View android:id="@+id/setting_content_chat_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_chat_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_chat_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_chat_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <RelativeLayout android:id="@+id/setting_content_chat_info_everyone"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_chat_info_everyone_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+		                    android:focusable="false"
+		                    android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_chat_info_everyone_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_chat_info_everyone_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_chat_everyone" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_chat_info_attention"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_chat_info_everyone"
+		                android:layout_marginTop="5dip" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_chat_info_attention_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+		                    android:focusable="false"
+		                    android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_chat_info_attention_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_chat_info_attention_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_chat_attention" />
+		                
+		            </RelativeLayout>
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/setting_content_other"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_chat"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/setting_content_other_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:textSize="18dp"
+	                android:text="@string/_setting_other" />
+	            
+	            <View android:id="@+id/setting_content_other_divider"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/setting_content_other_title"
+	                android:layout_marginTop="5dip"
+	                android:background="#BBBBBB" />
+	            
+	            <RelativeLayout android:id="@+id/setting_content_other_info"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/setting_content_other_divider"
+	                android:layout_marginTop="5dip" >
+	                
+	                <RelativeLayout android:id="@+id/setting_content_other_info_push"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_other_info_push_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+		                    android:focusable="false"
+		                    android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_other_info_push_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_other_info_push_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_other_push" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_other_info_phone"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_other_info_push"
+		                android:layout_marginTop="5dip" >
+		                
+		                <ToggleButton android:id="@+id/setting_content_other_info_phone_btn"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/toggle_style"
+		                    android:focusable="false"
+		                    android:checked="true"
+					        android:textOn=""
+					        android:textOff="" />
+		                
+		                <TextView android:id="@+id/setting_content_other_info_phone_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_other_info_phone_btn"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_other_phone" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_other_info_about"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_other_info_phone"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/setting_content_other_info_about_arrow"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/edit_arrow"/>
+		                
+		                <TextView android:id="@+id/setting_content_other_info_about_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_other_info_about_arrow"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_other_about" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_other_info_vote"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_other_info_about"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/setting_content_other_info_vote_arrow"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/edit_arrow"/>
+		                
+		                <TextView android:id="@+id/setting_content_other_info_vote_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_other_info_vote_arrow"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_other_vote" />
+		                
+		            </RelativeLayout>
+		            
+	                <RelativeLayout android:id="@+id/setting_content_other_info_advise"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/setting_content_other_info_vote"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/setting_content_other_info_advise_arrow"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:layout_centerVertical="true"
+		                    android:background="@drawable/edit_arrow"/>
+		                
+		                <TextView android:id="@+id/setting_content_other_info_advise_text"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toLeftOf="@id/setting_content_other_info_advise_arrow"
+		                    android:layout_marginRight="5dip"
+		                    android:textColor="#000000"
+		                    android:textSize="18dp"
+		                    android:text="@string/_setting_other_advise" />
+		                
+		            </RelativeLayout>
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <TextView android:id="@+id/setting_content_exit"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_content_other"
+	            android:layout_marginTop="10dip"
+	            android:background="@drawable/button_style"
+	            android:gravity="center"
+	            android:textColor="#000000"
+	            android:textSize="18dp"
+	            android:text="@string/_setting_exit" />
+	        
+	    </RelativeLayout>
+        
+    </ScrollView>
+    
+</RelativeLayout>

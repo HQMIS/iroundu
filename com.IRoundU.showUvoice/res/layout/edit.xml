@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout android:id="@+id/edit_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+        
+        <TextView android:id="@+id/edit_title_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style"
+	        android:focusable="false"
+	        android:textSize="15dp"
+	        android:textColor="#000000"
+	        android:text="@string/_home_edit_cancel" />
+    	
+	    <TextView android:id="@+id/edit_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_home_edit" />
+        
+	    <TextView android:id="@+id/edit_title_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style"
+	        android:focusable="false"
+	        android:textSize="15dp"
+	        android:textColor="#000000"
+	        android:text="@string/_home_edit_save" />
+	    
+    </RelativeLayout>
+    
+    <ScrollView android:id="@+id/edit_content_scroll"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/edit_title"
+	    android:layout_margin="5dip" >
+    
+	    <RelativeLayout android:id="@+id/edit_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <RelativeLayout android:id="@+id/edit_content_photo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView android:id="@+id/edit_content_photo_image"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/user" />
+	            
+	            <TextView android:id="@+id/edit_content_photo_describe"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/edit_content_photo_image"
+	                android:layout_marginLeft="5dip"
+			        android:textSize="15dp"
+			        android:textColor="#000000"
+			        android:text="@string/_home_edit_photo" />
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/edit_content_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/edit_content_photo"
+	            android:layout_marginTop="5dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/edit_content_name_describe"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+			        android:textSize="15dp"
+			        android:textColor="#000000"
+			        android:text="@string/_home_edit_name" />
+	            
+	            <RelativeLayout android:id="@+id/edit_content_name_down"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/edit_content_name_describe"
+	                android:layout_marginTop="5dip" >
+	                
+	                <TextView android:id="@+id/edit_content_name_down_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="5dip"
+		                android:layout_centerVertical="true"
+		                android:background="@drawable/edit_arrow" />
+	                
+	                <TextView android:id="@+id/edit_content_name_down_info"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@id/edit_content_name_down_arrow"
+		                android:layout_marginRight="5dip"
+		                android:singleLine="true"
+				        android:textSize="15dp"
+				        android:textColor="#000000"
+				        android:text="Breakroutine" />
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/edit_content_info"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/edit_content_name"
+	            android:layout_marginTop="5dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <RelativeLayout android:id="@+id/edit_content_info_job"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" >
+		            
+		            <TextView android:id="@+id/edit_content_info_job_describe"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+				        android:textSize="15dp"
+				        android:textColor="#000000"
+				        android:text="@string/_home_edit_job" />
+		            
+		            <RelativeLayout android:id="@+id/edit_content_info_job_down"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/edit_content_info_job_describe"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/edit_content_info_job_down_arrow"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_marginRight="5dip"
+			                android:layout_centerVertical="true"
+			                android:background="@drawable/edit_arrow" />
+		                
+		                <TextView android:id="@+id/edit_content_info_job_down_info"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_toLeftOf="@id/edit_content_info_job_down_arrow"
+			                android:layout_marginRight="5dip"
+			                android:singleLine="true"
+					        android:textSize="15dp"
+					        android:textColor="#000000"
+					        android:text="互联网" />
+		                
+		            </RelativeLayout>
+		            
+		        </RelativeLayout>
+	            
+	            <View android:id="@+id/edit_content_info_divider1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/edit_content_info_job"
+	                android:layout_marginTop="5dip"
+	                android:background="#000000" />
+	            
+	            <RelativeLayout android:id="@+id/edit_content_info_company"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/edit_content_info_divider1"
+		            android:layout_marginTop="5dip" >
+		            
+		            <TextView android:id="@+id/edit_content_info_company_describe"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+				        android:textSize="15dp"
+				        android:textColor="#000000"
+				        android:text="@string/_home_edit_company" />
+		            
+		            <RelativeLayout android:id="@+id/edit_content_info_company_down"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/edit_content_info_company_describe"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/edit_content_info_company_down_arrow"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_marginRight="5dip"
+			                android:layout_centerVertical="true"
+			                android:background="@drawable/edit_arrow" />
+		                
+		                <TextView android:id="@+id/edit_content_info_company_down_info"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_toLeftOf="@id/edit_content_info_company_down_arrow"
+			                android:layout_marginRight="5dip"
+			                android:singleLine="true"
+					        android:textSize="15dp"
+					        android:textColor="#000000"
+					        android:text="百度" />
+		                
+		            </RelativeLayout>
+		            
+		        </RelativeLayout>
+	            
+	            <View android:id="@+id/edit_content_info_divider2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:layout_below="@id/edit_content_info_company"
+	                android:layout_marginTop="5dip"
+	                android:background="#000000" />
+	            
+	            <RelativeLayout android:id="@+id/edit_content_info_school"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/edit_content_info_divider2"
+		            android:layout_marginTop="5dip" >
+		            
+		            <TextView android:id="@+id/edit_content_info_school_describe"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+				        android:textSize="15dp"
+				        android:textColor="#000000"
+				        android:text="@string/_home_edit_school" />
+		            
+		            <RelativeLayout android:id="@+id/edit_content_info_school_down"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/edit_content_info_school_describe"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/edit_content_info_school_down_arrow"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_marginRight="5dip"
+			                android:layout_centerVertical="true"
+			                android:background="@drawable/edit_arrow" />
+		                
+		                <TextView android:id="@+id/edit_content_info_school_down_info"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_toLeftOf="@id/edit_content_info_school_down_arrow"
+			                android:layout_marginRight="5dip"
+			                android:singleLine="true"
+					        android:textSize="15dp"
+					        android:textColor="#000000"
+					        android:text="HUST" />
+		                
+		            </RelativeLayout>
+		            
+		        </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/edit_content_describe"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/edit_content_info"
+	            android:layout_marginTop="5dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/edit_content_describe_describe"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+			        android:textSize="15dp"
+			        android:textColor="#000000"
+			        android:text="@string/_home_edit_describe" />
+	            
+	            <RelativeLayout android:id="@+id/edit_content_describe_down"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/edit_content_describe_describe"
+	                android:layout_marginTop="5dip" >
+	                
+	                <TextView android:id="@+id/edit_content_describe_down_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="5dip"
+		                android:layout_centerVertical="true"
+		                android:background="@drawable/edit_arrow" />
+	                
+	                <TextView android:id="@+id/edit_content_describe_down_info"
+		                android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_toLeftOf="@id/edit_content_describe_down_arrow"
+			            android:layout_marginRight="5dip"
+			            android:singleLine="true"
+				        android:textSize="15dp"
+				        android:textColor="#000000"
+				        android:text="做最有价值的创新" />
+	                
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/edit_content_sns"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/edit_content_describe"
+	            android:layout_marginTop="5dip"
+	            android:background="@drawable/button_style" >
+	            
+	            <TextView android:id="@+id/edit_content_sns_describe"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+			        android:textSize="15dp"
+			        android:textColor="#000000"
+			        android:text="@string/_home_edit_describe" />
+	            
+	            <LinearLayout android:id="@+id/edit_content_sns_type"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/edit_content_sns_describe"
+	                android:layout_marginTop="5dip"
+	                android:orientation="horizontal"
+	                android:baselineAligned="false" >
+	                
+	                <RelativeLayout android:id="@+id/edit_content_sns_type_sina"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1" >
+	                
+		                <TextView android:id="@+id/edit_content_sns_type_sina_icon"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:background="@drawable/edit_sns_type" />
+		                
+		                <TextView android:id="@+id/edit_content_sns_type_sina_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@id/edit_content_sns_type_sina_icon"
+			                android:layout_marginTop="5dip"
+			                android:layout_centerHorizontal="true"
+					        android:textSize="12dp"
+					        android:textColor="#000000"
+					        android:text="@string/_home_edit_SNS_sina" />
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout android:id="@+id/edit_content_sns_type_tencent"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1" >
+	                
+		                <TextView android:id="@+id/edit_content_sns_type_tencent_icon"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:background="@drawable/edit_sns_type" />
+		                
+		                <TextView android:id="@+id/edit_content_sns_type_tencent_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@id/edit_content_sns_type_tencent_icon"
+			                android:layout_marginTop="5dip"
+			                android:layout_centerHorizontal="true"
+					        android:textSize="12dp"
+					        android:textColor="#000000"
+					        android:text="@string/_home_edit_SNS_tencent" />
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout android:id="@+id/edit_content_sns_type_renren"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1" >
+	                
+		                <TextView android:id="@+id/edit_content_sns_type_renren_icon"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:background="@drawable/edit_sns_type" />
+		                
+		                <TextView android:id="@+id/edit_content_sns_type_renren_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@id/edit_content_sns_type_renren_icon"
+			                android:layout_marginTop="5dip"
+			                android:layout_centerHorizontal="true"
+					        android:textSize="12dp"
+					        android:textColor="#000000"
+					        android:text="@string/_home_edit_SNS_renren" />
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout android:id="@+id/edit_content_sns_type_weixin"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1" >
+	                
+		                <TextView android:id="@+id/edit_content_sns_type_weixin_icon"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:background="@drawable/edit_sns_type" />
+		                
+		                <TextView android:id="@+id/edit_content_sns_type_weixin_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@id/edit_content_sns_type_weixin_icon"
+			                android:layout_marginTop="5dip"
+			                android:layout_centerHorizontal="true"
+					        android:textSize="12dp"
+					        android:textColor="#000000"
+					        android:text="@string/_home_edit_SNS_weixin" />
+	                    
+	                </RelativeLayout>
+	                
+	                <RelativeLayout android:id="@+id/edit_content_sns_type_douban"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1" >
+	                
+		                <TextView android:id="@+id/edit_content_sns_type_douban_icon"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:background="@drawable/edit_sns_type" />
+		                
+		                <TextView android:id="@+id/edit_content_sns_type_douban_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_below="@id/edit_content_sns_type_douban_icon"
+			                android:layout_marginTop="5dip"
+			                android:layout_centerHorizontal="true"
+					        android:textSize="12dp"
+					        android:textColor="#000000"
+					        android:text="@string/_home_edit_SNS_douban" />
+	                    
+	                </RelativeLayout>
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/edit_content_certificate"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/edit_content_sns"
+	            android:layout_marginTop="5dip"
+	            android:background="@drawable/button_style" >
+	                
+	            <TextView android:id="@+id/edit_content_certificate_arrow"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="5dip"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/edit_arrow" />
+	            
+	            <TextView android:id="@+id/edit_content_certificate_describe"
+	                android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_toLeftOf="@id/edit_content_certificate_arrow"
+			        android:layout_marginRight="5dip"
+			        android:singleLine="true"
+			        android:textSize="15dp"
+			        android:textColor="#000000"
+			        android:text="@string/_home_edit_certificate" />
+	            
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+    
+    </ScrollView>
+    
+</RelativeLayout>

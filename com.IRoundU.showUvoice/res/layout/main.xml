@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+    
+    <com.iroundu.showuvoice.ContentView android:id="@+id/main_ContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="66dp" />
+    
+    <LinearLayout android:id="@+id/main_menu"
+	    android:layout_width="fill_parent"
+	    android:layout_height="85dp"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:background="@drawable/menu_toolbar" >
+	    
+	    <RelativeLayout android:id="@+id/main_menu_dynamic"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <TextView android:id="@+id/main_menu_dynamic_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_horizontal"
+	            android:textColor="#FFFFFF"
+	            android:textSize="15dp"
+	            android:text="@string/_nearby_title" />
+	        
+	        <TextView android:id="@+id/main_menu_dynamic_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@id/main_menu_dynamic_text"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/menu_trends_after" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/main_menu_search"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <TextView android:id="@+id/main_menu_search_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_horizontal"
+	            android:textColor="#FFFFFF"
+	            android:textSize="15dp"
+	            android:text="@string/_search_title" />
+	        
+	        <TextView android:id="@+id/main_menu_search_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@id/main_menu_search_text"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/menu_explore_before" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/main_menu_speak"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <TextView android:id="@+id/main_menu_speak_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="15dp"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/menu_speak_icon" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/main_menu_home"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <TextView android:id="@+id/main_menu_home_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_horizontal"
+	            android:textColor="#FFFFFF"
+	            android:textSize="15dp"
+	            android:text="@string/_home_title" />
+	        
+	        <TextView android:id="@+id/main_menu_home_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@id/main_menu_home_text"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/menu_home_before" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/main_menu_setting"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+	        <TextView android:id="@+id/main_menu_setting_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_horizontal"
+	            android:textColor="#FFFFFF"
+	            android:textSize="15dp"
+	            android:text="@string/_setting_title" />
+	        
+	        <TextView android:id="@+id/main_menu_setting_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@id/main_menu_setting_text"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/menu_setting_before" />
+	        
+	    </RelativeLayout>
+	
+	</LinearLayout>
+
+</RelativeLayout>

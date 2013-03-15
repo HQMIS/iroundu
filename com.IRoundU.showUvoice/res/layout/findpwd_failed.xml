@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:paddingBottom="5dip" >
+
+    <TextView
+        android:id="@+id/fpf_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginTop="@dimen/double_padding_top"
+        android:paddingLeft="@dimen/padding_sep"
+        android:background="@color/bgcolor"
+        android:text="@string/_find_back_failed"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/etcolor" >
+    </TextView>
+  
+    <Button
+        android:id="@+id/re_email_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:background="@drawable/button_color"
+        android:text="@string/_re_email"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/btcolor" >
+    </Button>
+    
+    <Button
+        android:id="@+id/new_register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/re_email_button"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginTop="@dimen/double_padding_top"
+        android:background="@drawable/button_color"
+        android:text="@string/_new_register"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/btcolor" >
+    </Button>
+
+</RelativeLayout>

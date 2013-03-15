@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+        
+    <RelativeLayout android:id="@+id/item_dynamic_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dip" >
+            
+        <TextView android:id="@+id/item_dynamic_user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/user" />
+            
+        <RelativeLayout android:id="@+id/item_dynamic_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_dynamic_user_image"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true" >
+                
+            <RelativeLayout android:id="@+id/item_dynamic_user_info_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <TextView android:id="@+id/item_dynamic_user_info_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:text="Breakroutine" />
+                    
+                <TextView android:id="@+id/item_dynamic_user_info_name_V"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/item_dynamic_user_info_name_text"
+                    android:layout_marginLeft="5dip"
+                    android:layout_alignBaseline="@id/item_dynamic_user_info_name_text"
+                    android:textColor="#FF0000"
+                    android:textSize="12dp"
+                    android:text="V" />
+                    
+                <TextView android:id="@+id/item_dynamic_user_info_name_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/item_dynamic_user_info_name_text"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:text="55分钟前" />
+                    
+            </RelativeLayout>
+                
+            <RelativeLayout android:id="@+id/item_dynamic_user_info_local"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_dynamic_user_info_name"
+                android:layout_marginTop="3dip" >
+                
+                <TextView android:id="@+id/item_dynamic_user_info_local_sex"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/sex_boy" />
+                
+                <TextView android:id="@+id/item_dynamic_user_info_local_detail"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toRightOf="@id/item_dynamic_user_info_local_sex"
+			        android:layout_marginLeft="5dip"
+			        android:layout_centerVertical="true"
+			        android:focusable="false"
+			        android:textSize="12dp"
+			        android:textColor="#000088"
+			        android:text="0.55km" />
+                    
+            </RelativeLayout>
+                
+        </RelativeLayout>
+            
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/item_dynamic_describe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_dynamic_user"
+	    android:layout_marginTop="5dip" >
+    
+        <TextView android:id="@+id/item_dynamic_describe_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textColor="#000000"
+			android:textSize="12dp"
+			android:text="55分钟前" />
+        
+	    <TextView android:id="@+id/item_dynamic_describe_info"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/item_dynamic_describe_time"
+	        android:layout_marginRight="5dip"
+	        android:textColor="#000000"
+	        android:textSize="12dp"
+	        android:text="卡农这首曲子是我最喜欢听的，送给大家！" />
+        
+    </RelativeLayout>
+         
+    <RelativeLayout android:id="@+id/item_dynamic_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_dynamic_describe"
+        android:layout_marginTop="5dip" >
+        
+        <RelativeLayout android:id="@+id/item_dynamic_info_self"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible" >
+	        
+            <RelativeLayout android:id="@+id/item_dynamic_info_self_form"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <RelativeLayout android:id="@+id/item_dynamic_info_self_form_button"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:visibility="visible" >
+			            
+                    <RelativeLayout android:id="@+id/item_dynamic_info_self_form_button_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" >
+                    
+				        <TextView android:id="@+id/item_dynamic_info_self_form_button_info_time"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:textSize="12dp"
+					        android:text="55分钟前" />
+                    
+				        <TextView android:id="@+id/item_dynamic_info_self_form_button_info_count"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_below="@id/item_dynamic_info_self_form_button_info_time"
+				            android:layout_marginTop="5dip"
+					        android:textColor="#000000"
+					        android:textSize="12dp"
+					        android:text="播放：1230次" />
+                        
+                    </RelativeLayout>
+			            
+			        <RelativeLayout android:id="@+id/item_dynamic_info_self_form_button_button"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_marginLeft="5dip"
+			       		android:layout_alignBottom="@+id/item_dynamic_info_self_form_button_info"
+			            android:background="@drawable/playbar" >
+			            
+			            <TextView android:id="@+id/item_dynamic_info_self_form_button_button_time"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerInParent="true"
+			                android:gravity="center"
+			                android:drawableRight="@drawable/playarrow"
+				            android:drawablePadding="5dip"
+				            android:textColor="#000000"
+				            android:textSize="12dp"
+				            android:text="60`" />
+			            
+			        </RelativeLayout>
+			        
+			    </RelativeLayout>
+			    
+                <RelativeLayout android:id="@+id/item_dynamic_info_self_form_describe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                    
+                    <TextView android:id="@+id/item_dynamic_info_self_form_describe_at"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+				        android:textSize="12dp"
+				        android:textColor="#000000"
+				        android:text=" @" />
+			        
+			        <TextView android:id="@+id/item_dynamic_info_self_form_describe_name"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@id/item_dynamic_info_self_form_describe_at"
+				        android:textSize="12dp"
+				        android:textColor="#000000"
+				        android:text="iroundu " />
+			        
+			        <TextView android:id="@+id/item_dynamic_info_self_form_describe_V"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@id/item_dynamic_info_self_form_describe_name"
+			            android:layout_marginLeft="2dip"
+				        android:textSize="12dp"
+				        android:textColor="#FF0000"
+				        android:text="V" />
+			        
+			        <TextView android:id="@+id/item_dynamic_info_self_form_describe_describe"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/item_dynamic_info_self_form_describe_V"
+				        android:textSize="12dp"
+				        android:textColor="#000000"
+				        android:text=":明天就是2012年最后一天..." />
+                    
+                </RelativeLayout>
+                
+		        <RelativeLayout android:id="@+id/item_dynamic_info_self_form_image"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/item_dynamic_info_self_form_describe"
+		            android:layout_marginTop="5dip"
+		            android:visibility="gone"
+		            android:background="@drawable/button_style" >
+		            
+		            <RelativeLayout android:id="@+id/item_dynamic_info_self_form_image_info"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_margin="5dip" >
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_form_image_info_like"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerHorizontal="true"
+		                    android:background="@drawable/like"
+			                android:gravity="center"
+				            android:textColor="#000000"
+				            android:textSize="12dp"
+				            android:text="60`" />
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_form_image_info_comment"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerHorizontal="true"
+		                    android:layout_below="@id/item_dynamic_info_self_form_image_info_like"
+		                    android:layout_marginTop="5dip"
+		                    android:background="@drawable/comment"
+			                android:gravity="center"
+				            android:textColor="#000000"
+				            android:textSize="12dp"
+				            android:text="60`" />
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_form_image_info_share"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerHorizontal="true"
+		                    android:layout_below="@id/item_dynamic_info_self_form_image_info_comment"
+		                    android:layout_marginTop="5dip"
+		                    android:background="@drawable/share" />
+		                
+		            </RelativeLayout>
+		            
+		            <TextView android:id="@+id/item_dynamic_info_self_form_image_tone"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@id/item_dynamic_info_self_form_image_info"
+		                android:layout_centerVertical="true"
+		                android:background="@drawable/music" />
+		            
+		        </RelativeLayout>
+                
+            </RelativeLayout>
+	        
+		    <RelativeLayout android:id="@+id/item_dynamic_info_self_thumb"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/item_dynamic_info_self_form"
+		        android:layout_marginTop="5dip" >
+		    
+		        <TextView android:id="@+id/item_dynamic_info_self_thumb_open"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/thumb" />
+		        
+		        <Gallery android:id="@+id/item_dynamic_info_self_thumb_face"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_toLeftOf="@id/item_dynamic_info_self_thumb_open"
+		            android:layout_marginRight="5dip" />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout android:id="@+id/item_dynamic_info_self_other"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		      	android:layout_below="@id/item_dynamic_info_self_thumb"
+			    android:layout_marginTop="5dip" >
+		        
+		        <RelativeLayout android:id="@+id/item_dynamic_info_self_other_detail"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:visibility="visible" >
+			        
+			        <TextView android:id="@+id/item_dynamic_info_self_other_detail_like"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_marginLeft="3dip"
+			            android:layout_gravity="center_vertical"
+			            android:background="@drawable/button_like"
+			            android:drawableLeft="@drawable/like"
+			            android:drawablePadding="3dip"
+			            android:focusable="false"
+			            android:gravity="center"
+			            android:textSize="12dp"
+			            android:textColor="#000000"
+			            android:text="@string/default_like" />
+			        
+			        <TextView android:id="@+id/item_dynamic_info_self_other_detail_comment"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/item_dynamic_info_self_other_detail_like"
+			            android:layout_marginLeft="10dip"
+			            android:layout_gravity="center_vertical"
+			            android:background="@drawable/button_like"
+			            android:drawableLeft="@drawable/comment"
+			            android:drawablePadding="3dip"
+			            android:focusable="false"
+			            android:gravity="center"
+			            android:textSize="12dp"
+			            android:textColor="#000000"
+			            android:text="@string/default_comment" />
+			        
+			        <RelativeLayout android:id="@+id/item_dynamic_info_self_other_detail_type"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginRight="3dip"
+			            android:layout_alignBottom="@+id/item_dynamic_info_self_other_detail_like" >
+			        
+				        <TextView android:id="@+id/item_dynamic_info_self_other_detail_type_share"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerInParent="true"
+				            android:visibility="visible"
+				            android:background="@drawable/button_like"
+				            android:drawableLeft="@drawable/share"
+				            android:drawablePadding="3dip"
+				            android:focusable="false"
+				            android:gravity="center"
+				            android:textSize="12dp"
+				            android:textColor="#000000"
+				            android:text="@string/_near_share" />
+				        
+				        <TextView android:id="@+id/item_dynamic_info_self_other_detail_type_trash"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerInParent="true"
+				            android:visibility="invisible"
+				            android:background="@drawable/trash"
+				            android:focusable="false" />
+			        
+			        </RelativeLayout>
+			        
+			    </RelativeLayout>
+		        
+		        <RelativeLayout android:id="@+id/item_dynamic_info_self_other_control"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone" >
+		            
+		            <RelativeLayout android:id="@+id/item_dynamic_info_self_other_control_info"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_other_control_info_count"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentLeft="true"
+		                    android:layout_marginLeft="5dip"
+				            android:textSize="12dp"
+				            android:textColor="#000000"
+				            android:text="播放：1128次" />
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_other_control_info_time"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+				            android:textSize="12dp"
+				            android:textColor="#000000"
+				            android:text="00:12-01:30" />
+		                
+		            </RelativeLayout>
+		            
+		            <RelativeLayout android:id="@+id/item_dynamic_info_self_other_control_operator"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@id/item_dynamic_info_self_other_control_info"
+		                android:layout_marginTop="5dip" >
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_other_control_operator_back"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentLeft="true"
+		                    android:layout_marginLeft="5dip"
+		                    android:background="@drawable/playback" />
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_other_control_operator_play"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerHorizontal="true"
+		                    android:background="@drawable/play" />
+		                
+		                <TextView android:id="@+id/item_dynamic_info_self_other_control_operator_forward"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignParentRight="true"
+		                    android:layout_marginRight="5dip"
+		                    android:background="@drawable/playforhead" />
+		                
+		            </RelativeLayout>
+		            
+		        </RelativeLayout>
+		        
+		    </RelativeLayout>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/item_dynamic_info_like"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_style"
+	        android:visibility="gone" >
+	        
+	        <RelativeLayout android:id="@+id/item_dynamic_info_like_info"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView android:id="@+id/item_dynamic_info_like_info_at"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+			        android:textSize="12dp"
+			        android:textColor="#000000"
+			        android:text=" @" />
+		        
+		        <TextView android:id="@+id/item_dynamic_info_like_info_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/item_dynamic_info_like_info_at"
+			        android:textSize="12dp"
+			        android:textColor="#000000"
+			        android:text="iroundu " />
+		        
+		        <TextView android:id="@+id/item_dynamic_info_like_info_V"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/item_dynamic_info_like_info_name"
+		            android:layout_marginLeft="2dip"
+			        android:textSize="12dp"
+			        android:textColor="#FF0000"
+			        android:text="V" />
+		        
+		        <TextView android:id="@+id/item_dynamic_info_like_info_describe"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/item_dynamic_info_like_info_V"
+			        android:textSize="12dp"
+			        android:textColor="#000000"
+			        android:text=":明天就是2012年最后一天..." />
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout android:id="@+id/item_dynamic_info_like_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/item_dynamic_info_like_info"
+		        android:layout_marginTop="5dip" >
+		        
+	            <RelativeLayout android:id="@+id/item_dynamic_info_like_button_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+                    
+				    <TextView android:id="@+id/item_dynamic_info_like_button_info_time"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+					    android:textColor="#000000"
+					    android:textSize="12dp"
+					    android:text="55分钟前" />
+                    
+				    <TextView android:id="@+id/item_dynamic_info_like_button_info_count"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/item_dynamic_info_like_button_info_time"
+				        android:layout_marginTop="5dip"
+					    android:textColor="#000000"
+					    android:textSize="12dp"
+				        android:text="播放：1230次" />
+                        
+                </RelativeLayout>
+		            
+		        <RelativeLayout android:id="@+id/item_dynamic_info_like_button_button"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginLeft="5dip"
+		            android:layout_alignBottom="@+id/item_dynamic_info_like_button_info"
+		            android:background="@drawable/playbar" >
+		            
+		            <TextView android:id="@+id/item_dynamic_info_like_button_button_time"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerInParent="true"
+		                android:gravity="center"
+		                android:drawableRight="@drawable/playarrow"
+			            android:drawablePadding="5dip"
+			            android:textColor="#000000"
+			            android:textSize="12dp"
+			            android:text="60`" />
+		            
+		        </RelativeLayout>
+		        
+		    </RelativeLayout>
+	        
+	    </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <View android:id="@+id/item_dynamic_divider"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/item_dynamic_info"
+	    android:layout_marginTop="5dip"
+	    android:background="#888888" />
+    
+</RelativeLayout>

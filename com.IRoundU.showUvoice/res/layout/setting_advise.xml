@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout android:id="@+id/setting_advise_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+    	<TextView android:id="@+id/setting_advise_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/_back" />
+	    
+	    <TextView android:id="@+id/setting_advise_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_setting_other_advise" />
+        
+    </RelativeLayout>
+    
+    <ScrollView android:id="@+id/setting_advise_content_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_advise_title"
+        android:layout_margin="15dip" >
+        
+        <RelativeLayout android:id="@+id/setting_advise_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <EditText android:id="@+id/setting_advise_content_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:minLines="5"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:hint="@string/_setting_advise_hint" />
+            
+            <TextView android:id="@+id/setting_advise_content_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_advise_content_edit"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:background="@drawable/button_style"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="@string/_setting_advise_commit" />
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

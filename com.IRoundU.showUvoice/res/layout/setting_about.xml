@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+   
+	<RelativeLayout android:id="@+id/setting_about_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+    	<TextView android:id="@+id/setting_about_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/_back" />
+	    
+	    <TextView android:id="@+id/setting_about_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_setting_other_about" />
+        
+    </RelativeLayout>
+    
+	<ScrollView android:id="@+id/setting_about_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/setting_about_title"
+	    android:layout_margin="10dip" >
+	    
+	    <TextView android:id="@+id/setting_about_content_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button_style"
+	        android:textColor="#000000"
+	        android:textSize="15dp"
+	        android:text="@string/_setting_about_text" />
+	    
+	</ScrollView>
+	
+</RelativeLayout>

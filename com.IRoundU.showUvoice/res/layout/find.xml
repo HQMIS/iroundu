@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout android:id="@+id/find_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+        <TextView android:id="@+id/find_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/_back" />
+        
+        <TextView android:id="@+id/find_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="@string/_near_find" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/find_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_title"
+        android:layout_margin="5dip" >
+        
+        <TextView android:id="@+id/find_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style"
+            android:focusable="false"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="@string/_near_sure" />
+        
+        <EditText android:id="@+id/find_search_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/find_search_button"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/button_style"
+            android:bufferType="editable"
+            android:inputType="text"
+            android:hint="@string/_near_hint" />
+        
+    </RelativeLayout>
+    
+    <TextView android:id="@+id/find_sina"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_search"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@string/_near_sina" />
+    
+    <TextView android:id="@+id/find_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_sina"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="8dip"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@string/_near_qq" />
+     
+    <View android:id="@+id/find_divider1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/find_qq"
+	    android:layout_marginTop="5dip"
+	    android:background="#444444" />
+     
+    <TextView android:id="@+id/find_hot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_divider1"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@string/_near_hot" />
+    
+    <View android:id="@+id/find_divider2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/find_hot"
+	    android:layout_marginTop="5dip"
+	    android:background="#444444" />
+    
+    <RelativeLayout android:id="@+id/find_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/find_divider2"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+        
+	    <ListView android:id="@+id/find_list_info"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:divider="#888888"
+	        android:dividerHeight="1dp"
+	        android:cacheColorHint="@android:color/transparent" >
+	    </ListView>
+	    
+    </RelativeLayout>
+    
+</RelativeLayout>

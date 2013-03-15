@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout android:id="@+id/dynamic_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+        <LinearLayout android:id="@+id/dynamic_title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+            
+            <TextView android:id="@+id/dynamic_title_type_near"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:background="@drawable/button_style"
+	            android:focusable="false"
+	            android:textSize="12dp"
+	            android:textColor="#000000"
+	            android:text="@string/_near_near" />
+            
+            <TextView android:id="@+id/dynamic_title_type_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:background="@drawable/button_style"
+	            android:focusable="false"
+	            android:textSize="12dp"
+	            android:textColor="#000000"
+	            android:text="@string/_near_attention" />
+            
+        </LinearLayout>
+        
+        <TextView android:id="@+id/dynamic_title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style"
+            android:focusable="false"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:text="@string/_near_play" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/dynamic_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/dynamic_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+        
+        <RelativeLayout android:id="@+id/dynamic_content_attention"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+            
+            <TextView android:id="@+id/dynamic_content_attention_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/button_style"
+	            android:focusable="false"
+	            android:textSize="18dp"
+	            android:textColor="#000000"
+	            android:text="@string/_near_find"  />
+            
+        </RelativeLayout>
+        
+	    <ListView android:id="@+id/dynamic_content_info"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/dynamic_content_attention"
+	        android:divider="#888888"
+	        android:dividerHeight="1dp"
+	        android:cacheColorHint="@android:color/transparent" >
+	    </ListView>
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

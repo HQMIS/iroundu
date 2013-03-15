@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+    
+    <RelativeLayout android:id="@+id/setting_pwd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#BBBBBB" >
+    	
+    	<TextView android:id="@+id/setting_pwd_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/_back" />
+	    
+	    <TextView android:id="@+id/setting_pwd_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+	        android:focusable="false"
+	        android:textSize="20dp"
+	        android:textColor="#000000"
+	        android:text="@string/_setting_account_pwd" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/setting_pwd_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_pwd_title"
+        android:layout_margin="15dip" >
+        
+        <EditText android:id="@+id/setting_pwd_content_old"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:hint="@string/_setting_pwd_old" />
+        
+        <EditText android:id="@+id/setting_pwd_content_new"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_pwd_content_old"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/button_style"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:hint="@string/_setting_pwd_new" />
+        
+        <EditText android:id="@+id/setting_pwd_content_new2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_pwd_content_new"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/button_style"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:hint="@string/_setting_pwd_new2" />
+        
+        <TextView android:id="@+id/setting_pwd_content_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_pwd_content_new2"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:background="@drawable/button_style"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="@string/_setting_pwd_sure" />
+        
+        <RelativeLayout android:id="@+id/setting_pwd_content_lost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_pwd_content_btn"
+            android:layout_marginTop="20dip" >
+            
+            <TextView android:id="@+id/setting_pwd_content_lost_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dip"
+	            android:gravity="center"
+	            android:background="@drawable/button_style"
+	            android:textColor="#000000"
+	            android:textSize="15dp"
+	            android:text="@string/_setting_pwd_find" />
+            
+            <TextView android:id="@+id/setting_pwd_content_lost_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/setting_pwd_content_lost_btn"
+                android:layout_marginRight="15dip"
+                android:layout_centerVertical="true"
+                android:textColor="#888888"
+                android:textSize="15dp"
+                android:text="@string/_setting_pwd_lost" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>
